@@ -1,0 +1,29 @@
+<% layout('layouts/boilerplate.ejs') %> 
+
+<div class="row justify-content-center">
+    <div class="col-sm-8 col-md-6 col-xl-4 mt-3">
+        <div class="card shadow p-3">
+            <div class="text-center mb-2">
+                <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" class="card-img-top w-50 " alt="">
+            </div>
+            <h3 class="card-title text-center">Login</h3>
+            <div class="card-body">
+                <form action="/login" method="POST" class="validated-form" novalidate>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username: </label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" autofocus required>
+                        <div class="invalid-feedback">Enter your username!</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password: </label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <div class="invalid-feedback">Enter your password!</div>
+                    </div>
+                    <div class="mt-4 d-grid">
+                        <button class="btn btn-success">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
