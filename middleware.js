@@ -12,7 +12,7 @@ module.exports.validateCampground = (req, res, next) => {
         const msg = error.details.map(el => el.message).join(', ');     // Mapping over the array to turn it into a string to display
         throw new ExpressError(msg, 400)
     }
-    else{
+    else{x
         next();
     }
 }
